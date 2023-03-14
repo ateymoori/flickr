@@ -30,7 +30,7 @@ class ListItemTest {
         )
 
         composeTestRule.setContent {
-            ListItem(photo = photo , modifier = Modifier.padding())
+            ListItem(photo = photo, modifier = Modifier.padding())
         }
         composeTestRule.onNodeWithContentDescription("photo").assertIsDisplayed()
     }

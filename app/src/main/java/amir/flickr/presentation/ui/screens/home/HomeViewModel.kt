@@ -18,7 +18,6 @@ class HomeViewModel @Inject constructor(
         HomeContract.HomeEffect>(HomeContract.HomeState(InitialState)) {
 
     private val list = mutableListOf<Photo>()
-
     private fun searchPhoto(query: String) {
         viewModelScope.launch {
             if (query != viewState.value.query) {

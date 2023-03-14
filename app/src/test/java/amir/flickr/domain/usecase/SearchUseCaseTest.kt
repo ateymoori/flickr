@@ -20,16 +20,16 @@ class SearchUseCaseTest {
         val currentPage = 1
         val expectedPhotos = listOf(
             Photo(
-            id = "1",
-            owner = "2",
-            secret = "3",
-            server = "4",
-            farm = 123,
-            title = "title",
-            isPublic = 1,
-            isFriend = 2,
-            isFamily = 3
-        )
+                id = "1",
+                owner = "2",
+                secret = "3",
+                server = "4",
+                farm = 123,
+                title = "title",
+                isPublic = 1,
+                isFriend = 2,
+                isFamily = 3
+            )
         )
         val photos = Photos(page = 1, pages = 2, perPage = 10, total = 100, photoList = expectedPhotos)
         `when`(searchRepository.search(query, currentPage)).thenReturn(photos)
