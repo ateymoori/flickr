@@ -1,0 +1,42 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Android Studio
+.idea/
+.gradle/
+/.idea/tasks.xml
+/.idea/gradle.xml
+
+# Gradle
+/build/
+/.gradle/
+/captures/
+
+# NDK
+.obj/
+
+# Compiled JNI code
+*.class
+
+# Generated files
+gen/
+out/
+
+# Emulator
+*.qcow2
+
+
+# Signing files
+.signing/
